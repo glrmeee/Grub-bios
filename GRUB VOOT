@@ -1,0 +1,114 @@
+Grub List
+By Voot
+
+DISCLAIMER: I AM NOT RESPONSIBLE FOR ANY HARM DONE TO YOUR COMPUTER. THIS LIST HAS BEEN DONE MULTIPLE TIMES ON MY PC AND MANY OTHERS. FOLLOW INSTRUCTIONS CAREFULLY FOR EACH SETTING.   STOP DMING ME FOR HELP, FIGURE IT OUT YOURSELF.
+
+
+CNVI MODE (DISABLE)  | Related to WIFI and Bluetooth
+
+WWAN Reset Workaround (DISABLE) | Related to WIFI
+
+WIFI SAR (DISABLE) | Related to WIFI
+
+WWAN Device (DISABLE)  | Related to WIFI
+
+C6DRAM (DISABLE) | Related to CStates, Allows moving DRAM contents to PRM memory when CPU is in C6 state. 
+
+Software Guards Extensions (DISABLE)  | Related to Security
+
+AP Threads Idle Manner | Set to “RUN Loop” (99% sure this is not on AMD systems) I had better smoothness/mouse feel setting it to RUN Loop.
+
+MonitorMWait (DISABLE) | Completely useless
+
+Intel Trusted Execution Technology (DISABLE) | Related to TPM and Security
+
+Intel RMT State (DISABLE) | Puts PC in a sleep low-power mode
+
+Intel Ready Mode Technology (DISABLE) | Puts pc in a sleep low-power mode
+
+Limit CPUID Maximum (ENABLE) | Will allow legacy OS to boot even without support for CPUs with extended CPUID functions.
+
+Intel(R) Speed Shift Technology Interrupt Control (DISABLE) | Related to Speed shift.
+
+Boot performance mode | Set to “Turbo Performance”
+
+EIST (DISABLE) | Enhanced Intel Speedstep, throttling.
+
+Interrupt Redirection Mode Selection | Set to “Round Robin” This immensely helps smoothness and input. (Make sure its not “PAIR with Round robin”)
+
+Intel Adaptive Thermal Monitor (DISABLE) | Useless.
+
+Energy Performance Gain (DISABLE) | Helps with ram latency.
+
+Energy Efficient P-state (DISABLE) | Related to Power-saving.
+
+Energy Efficient Turbo (DISABLE) | Related to Power-saving.
+
+PS2 Keyboard and Mouse (DISABLE) | Disable this if you do not use a PS2 peripheral.
+
+CrashLog Feature (DISABLE) | Related to logging.
+
+Enable Hibernation (DISABLE) | Related to sleeping/hibernation.
+
+ACPI Standby State | Set to “Suspend Disable”.
+
+PCI-X Latency Timer | Set to 32 PCI Bus Clocks “0x20”.
+
+BME DMA Mitigation (DISABLE) | Related to security.
+
+Type C Support (DISABLE) | Related to Type-c.
+
+Enable RH Prevention (DISABLE) | Related to Security.
+
+Per Bank Refresh (DISABLE) | Related to DIMM Refreshing.
+
+Channel A DIMM Control | This is for DIMM A Control, “Disable DIMM0” disables DIMM 1, and “Disable DIMM1” disables DIMM2.
+
+
+
+
+Channel B DIMM Control | This is for DIMM B Control, “Disable DIMM0” disables DIMM 1, and “Disable DIMM1” disables DIMM2.
+
+Power Down Unused Lanes (DISABLE) | Related to Power down for PCIe lanes. (There are tons of these, so make sure to go through, get the offset and disable it in Grub)
+
+LTR (DISABLE) | Latency Tolerance Reporting, related to power saving in a way. (There are tons of them, so you need to find the offsets, and disable them in Grub.)
+
+DDR PowerDown and idle counter (DISABLE/SET TO PCODE) | This is RAM Powerdown. Can shave off a few ns on RAM.
+
+SelfRefresh Enable (DISABLE) | Related to RAM Refreshing, helps with input a decent bit. Can cause issues with booting/restarting - on low end boards. (use power button on pc to reboot.)
+
+LAN Wake From DeepSx (DISABLE) | Useless.
+
+Wake on LAN Enable (DISABLE) | Useless.
+
+Disable DSX ACPRESENT PullDown (ENABLE) | Useless.
+
+Legacy IO Low Latency (ENABLE) | Test enabled.
+
+PCH Cross Throttling (DISABLE) | Related to throttling.
+
+PCH Energy Reporting (DISABLE) Related to logging.
+
+PCI Express Clock Gating (DISABLE) | Related to power-saving.
+
+Disable Gen2 Pll Shutdown and L1 Controller Power gating (ENABLE) | Related to power-saving. (This setting is on each PCIe lane, so make sure to go through and disable.)
+
+Snoop Latency Multiplier (Set to 0x0) | Still TESTING, this won’t mess up anything, test and see if you feel a difference or gain higher framerates. (There are multiple Latency Multipliers, so make sure to go through and set to 0x0.)
+
+Snoop Latency Value (Set to 0x0) | Still TESTING, this won’t mess up anything, test and see if you feel a difference or gain higher framerates. (There are multiple Latency Multipliers, so make sure to go through and set to 0x0.)
+
+Non Snoop Latency Multiplier (Set to 0x0) | Still TESTING, this won’t mess up anything, test and see if you feel a difference or gain higher framerates. (There are multiple Latency Multipliers, so make sure to go through and set to 0x0.)
+
+Non Snoop Latency Value (Set to 0x0) | Still TESTING, this won’t mess up anything, test and see if you feel a difference or gain higher framerates. (There are multiple Latency Multipliers, so make sure to go through and set to 0x0.)
+
+PowerDown Energy Ch1Dimm1 (Set to 0x0) | Related to RAM Power Down Mode.
+
+PowerDown Energy Ch1Dimm0 (Set to 0x0) | Related to RAM Power Down Mode.
+
+PowerDown Energy Ch0Dimm1 (Set to 0x0) | Related to RAM Power Down Mode.
+
+PowerDown Energy Ch0Dimm0 (Set to 0x0) | Related to RAM Power Down Mode.
+
+TPM State (DISABLE) | Related to Security
+
+Command Rate Support (Set to 0x0) | Disable this before ram overclocking, as it can force fake command rate and give you bad results.
